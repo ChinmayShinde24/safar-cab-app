@@ -46,7 +46,7 @@ const Pricing = () => {
         <div>
           <strong>Pickup Location:</strong> {pickup} <br />
           <strong>Destination:</strong> {destination} <br />
-          <strong>Journey Type:</strong> {journeyType}
+          <strong>Journey Types:</strong> {journeyType}
         </div>
         <div className="pricing-list">
           {prices.map((car, index) => (
