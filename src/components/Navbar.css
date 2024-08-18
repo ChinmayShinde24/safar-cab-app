@@ -1,0 +1,65 @@
+.navbar {
+  background-color: black;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo-link {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  /* When the navbar is open, the content will push down */
+  .navbar + .content {
+    transition: margin-top 0.3s ease-out;
+  }
+
+  .navbar-links.open + .content {
+    margin-top: 300px; /* Adjust this value to match the height of the expanded menu */
+  }
+
+  .nav-link{
+    font-size: 13px;
+  }
+}

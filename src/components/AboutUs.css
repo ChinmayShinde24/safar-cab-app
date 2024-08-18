@@ -1,0 +1,50 @@
+.aboutus-container {
+  background: url('https://outstation.olacabs.com/media/wysiwyg/homepage.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.aboutus-overlay {
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-content {
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.aboutus-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.aboutus-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 800;
+}

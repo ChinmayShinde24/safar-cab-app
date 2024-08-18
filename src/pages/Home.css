@@ -1,0 +1,129 @@
+/* General styles for info-container  */
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.search-boxes,
+.search select,
+.search button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: calc(25% - 10px); /* Make the boxes take up equal space */
+}
+
+.search button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .search-boxes,
+  .search select,
+  .search button {
+    min-width: 100%; 
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 1.5rem; 
+    text-align: center;
+  }
+
+  .search {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-boxes,
+  .search select,
+  .search button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.info-header {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  margin-bottom: 2rem;
+}
+
+.info-img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.info-subheader {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.info p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  max-width: 230px;
+}
+
+/* Larg */
+@media (min-width: 768px) {
+  .info-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .search {
+    display: flex;
+  }
+
+  .info {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .info-header {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .info-subheader {
+    font-size: 1.5rem;
+  }
+
+  .info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 250px;
+  }
+}

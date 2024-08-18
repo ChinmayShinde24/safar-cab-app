@@ -1,0 +1,21 @@
+.journey {
+  padding: 20px;
+  text-align: center;
+}
+
+.journey h2 {
+  margin-bottom: 20px;
+}
+
+.journey button {
+  padding: 10px 20px;
+  background-color: lightgreen;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.journey p {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
